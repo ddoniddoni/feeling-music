@@ -6,10 +6,15 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "scan:i18n": "i18next-scanner",
+    "upload:i18n": "i18next-scanner && node translation/upload.js",
+    "download:i18n": "node translation/download.js"
   },
   "dependencies": {
+    "dotenv": "^16.5.0",
     "next": "15.3.2",
+    "next-intl": "^4.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
@@ -17,7 +22,12 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "google-auth-library": "^9.15.1",
+    "google-spreadsheet": "^4.1.4",
+    "i18next-scanner": "^4.6.0",
+    "mkdirp": "^3.0.1",
     "sass": "^1.89.0",
-    "typescript": "^5"
+    "typescript": "^5",
+    "uninstall": "^0.0.0"
   }
 }
