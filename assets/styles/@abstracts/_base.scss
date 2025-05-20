@@ -1,0 +1,229 @@
+/* Common Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::before,
+*:before,
+*::after,
+*:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* set html5 elements to block */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+q,
+s,
+samp,
+strike,
+strong,
+sub,
+sup,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend {
+  margin: 0;
+  line-height: 1.3em;
+  vertical-align: middle;
+  border: 0 none;
+  -webkit-font-smoothing: antialiased;
+  scroll-behavior: auto;
+}
+body {
+  position: relative;
+  font-family: var(--font-base-stack);
+  word-break: keep-all;
+  color: var(--slate-900);
+  font-size: 100%;
+  text-size-adjust: 100%;
+  background-color: var(--white);
+}
+header,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-size: 100%;
+}
+html,
+body {
+  -webkit-overflow-scrolling: touch;
+  font-size: 100%;
+}
+main {
+  display: block;
+}
+caption,
+legend {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+caption {
+  display: none;
+}
+img {
+  border: none;
+  vertical-align: top;
+}
+select,
+input {
+  vertical-align: top;
+  border: 0px;
+  border-radius: 0;
+  background-color: transparent;
+}
+hr {
+  display: none;
+  border: 0 none;
+}
+ol,
+ul,
+ul li {
+  list-style: none;
+}
+em {
+  font-style: normal;
+}
+menu li {
+  list-style: none;
+}
+address {
+  display: inline;
+  font-style: normal;
+}
+button {
+  appearance: none;
+  cursor: pointer;
+  border: 0px;
+  background-color: transparent;
+  border-radius: 0;
+}
+// select { appearance: none; }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset {
+  margin: 0;
+  padding: 0;
+}
+input,
+textarea,
+keygen,
+select,
+button,
+pre {
+  font-family: var(--font-base-stack);
+}
+strong {
+  font-weight: normal;
+}
+dfn {
+  font-style: normal;
+}
+i,
+b,
+u,
+s {
+  font-style: inherit;
+  font-family: inherit;
+  text-decoration: none;
+}
+code {
+  font-family: monospace;
+}
+mark {
+  color: inherit;
+  background-color: transparent;
+}
+
+:focus {
+  outline: 0;
+}
+
+legend.show {
+  position: static;
+  height: auto;
+  width: auto;
+  font-size: inherit;
+  visibility: visible;
+}
+.hidden {
+  position: absolute;
+  left: -9999px;
+}
+
+.txt-l {
+  text-align: left !important;
+}
+.txt-c {
+  text-align: center !important;
+}
+.txt-r {
+  text-align: right !important;
+}
+abbr {
+  vertical-align: baseline;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}

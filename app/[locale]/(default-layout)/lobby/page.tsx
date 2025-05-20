@@ -45,16 +45,15 @@ export default function LobbyPage(props: never) {
       setLoading(false);
     }
   };
-
   return (
-    <div style={{ maxWidth: 500, margin: "0 auto", padding: 32 }}>
-      <h2>🎵 기분에 맞는 음악 추천</h2>
+    <div className="" style={{ maxWidth: 500, margin: "0 auto", padding: 32 }}>
+      <h2>🎵 {t("label-음악추천")}</h2>
       <form onSubmit={handleSubmit} style={{ marginBottom: 20 }}>
         <input
           type="text"
           value={feeling}
           onChange={(e) => setFeeling(e.target.value)}
-          placeholder="지금 기분을 입력하세요 (예: 행복해, 우울해 등)"
+          placeholder={t("label-기분입력")}
           style={{ width: "70%", padding: 8, fontSize: 16 }}
         />
         <button
@@ -62,15 +61,15 @@ export default function LobbyPage(props: never) {
           disabled={loading || !feeling}
           style={{ marginLeft: 8, padding: "8px 16px", fontSize: 16 }}
         >
-          추천받기
+          {t("label-추천받기")}
         </button>
       </form>
-      {loading && <p>추천 중...</p>}
+      {loading && <p>{t("txt-추천중")}</p>}
       {error && <p style={{ color: "red" }}>{error}</p>}
       {sentiment && (
         <div>
           <p>
-            감정 분석 결과: <b>{sentiment}</b>
+            {t("label-감정분석결과")}: <b>{sentiment}</b>
           </p>
           <ul>
             {tracks.map((track, idx) => (
